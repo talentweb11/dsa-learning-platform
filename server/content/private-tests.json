@@ -1,0 +1,512 @@
+{
+  "running-totals": [
+    {
+      "input": {
+        "numbers": [
+          -2,
+          5,
+          -1
+        ],
+        "target": 0
+      },
+      "expected": [
+        -2,
+        3,
+        2
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          0
+        ],
+        "target": 0
+      },
+      "expected": [
+        0
+      ]
+    }
+  ],
+  "highest-reading": [
+    {
+      "input": {
+        "numbers": [
+          7
+        ],
+        "target": 0
+      },
+      "expected": [
+        7
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          -1,
+          0,
+          6,
+          6
+        ],
+        "target": 0
+      },
+      "expected": [
+        6
+      ]
+    }
+  ],
+  "count-matches": [
+    {
+      "input": {
+        "numbers": [
+          1,
+          2,
+          3
+        ],
+        "target": 9
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          -2,
+          -2,
+          1
+        ],
+        "target": -2
+      },
+      "expected": [
+        2
+      ]
+    }
+  ],
+  "unique-stops": [
+    {
+      "input": {
+        "numbers": [
+          -3,
+          -3,
+          0,
+          2
+        ],
+        "target": 0
+      },
+      "expected": [
+        -3,
+        0,
+        2
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          5,
+          5,
+          5
+        ],
+        "target": 0
+      },
+      "expected": [
+        5
+      ]
+    }
+  ],
+  "pair-budget": [
+    {
+      "input": {
+        "numbers": [
+          1,
+          2,
+          3
+        ],
+        "target": 8
+      },
+      "expected": []
+    },
+    {
+      "input": {
+        "numbers": [
+          2,
+          2,
+          5
+        ],
+        "target": 7
+      },
+      "expected": [
+        0,
+        2
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          -2,
+          5,
+          3
+        ],
+        "target": 1
+      },
+      "expected": [
+        0,
+        2
+      ]
+    }
+  ],
+  "insertion-point": [
+    {
+      "input": {
+        "numbers": [],
+        "target": 1
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          5,
+          5
+        ],
+        "target": 4
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          -4,
+          0,
+          8
+        ],
+        "target": 1
+      },
+      "expected": [
+        2
+      ]
+    }
+  ],
+  "rotate-log": [
+    {
+      "input": {
+        "numbers": [
+          1,
+          2,
+          3
+        ],
+        "target": 4
+      },
+      "expected": [
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          8
+        ],
+        "target": 0
+      },
+      "expected": [
+        8
+      ]
+    }
+  ],
+  "best-streak": [
+    {
+      "input": {
+        "numbers": [
+          4
+        ],
+        "target": 0
+      },
+      "expected": [
+        4
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          0,
+          2,
+          -1,
+          2
+        ],
+        "target": 0
+      },
+      "expected": [
+        3
+      ]
+    }
+  ],
+  "next-warmer": [
+    {
+      "input": {
+        "numbers": [],
+        "target": 0
+      },
+      "expected": []
+    },
+    {
+      "input": {
+        "numbers": [
+          1,
+          2,
+          3
+        ],
+        "target": 0
+      },
+      "expected": [
+        2,
+        3,
+        -1
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          5,
+          4,
+          2
+        ],
+        "target": 0
+      },
+      "expected": [
+        -1,
+        -1,
+        -1
+      ]
+    }
+  ],
+  "exact-segments": [
+    {
+      "input": {
+        "numbers": [
+          -1,
+          1,
+          0
+        ],
+        "target": 0
+      },
+      "expected": [
+        3
+      ]
+    },
+    {
+      "input": {
+        "numbers": [],
+        "target": 2
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          2,
+          2,
+          2
+        ],
+        "target": 4
+      },
+      "expected": [
+        2
+      ]
+    }
+  ],
+  "window-peaks": [
+    {
+      "input": {
+        "numbers": [
+          2,
+          2,
+          2
+        ],
+        "target": 2
+      },
+      "expected": [
+        2,
+        2
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          -3,
+          -1,
+          -2
+        ],
+        "target": 3
+      },
+      "expected": [
+        -1
+      ]
+    }
+  ],
+  "rain-reservoir": [
+    {
+      "input": {
+        "numbers": [],
+        "target": 0
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          4,
+          1,
+          1,
+          4
+        ],
+        "target": 0
+      },
+      "expected": [
+        6
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          2,
+          0,
+          2
+        ],
+        "target": 0
+      },
+      "expected": [
+        2
+      ]
+    }
+  ],
+  "rising-chain": [
+    {
+      "input": {
+        "numbers": [],
+        "target": 0
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          5,
+          4,
+          3
+        ],
+        "target": 0
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          1,
+          3,
+          2,
+          4,
+          5
+        ],
+        "target": 0
+      },
+      "expected": [
+        4
+      ]
+    }
+  ],
+  "merge-bookings": [
+    {
+      "input": {
+        "numbers": [],
+        "target": 0
+      },
+      "expected": []
+    },
+    {
+      "input": {
+        "numbers": [
+          1,
+          9,
+          3,
+          4
+        ],
+        "target": 0
+      },
+      "expected": [
+        1,
+        9
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          5,
+          5,
+          1,
+          1
+        ],
+        "target": 0
+      },
+      "expected": [
+        1,
+        1,
+        5,
+        5
+      ]
+    }
+  ],
+  "fewest-hops": [
+    {
+      "input": {
+        "numbers": [
+          0
+        ],
+        "target": 0
+      },
+      "expected": [
+        0
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          3,
+          0,
+          0,
+          1
+        ],
+        "target": 0
+      },
+      "expected": [
+        1
+      ]
+    },
+    {
+      "input": {
+        "numbers": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "target": 0
+      },
+      "expected": [
+        3
+      ]
+    }
+  ]
+}

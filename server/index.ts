@@ -1,0 +1,11 @@
+import { createApp } from './app';
+import type { Language } from '../src/schema';
+const defaults = { python:71, java:62, cpp:54, javascript:63 };
+const languageIds = Object.fromEntries(Object.entries(defaults).map(([key,value])=>[key,Number(process.env[`JUDGE_LANGUAGE_${key.toUpperCase()}`] || value)])) as Record<Language,number>;
+const url=(process.env.JUDGE0_URL || '').replace(/\/$/,'');
+if(url && !/^https?:\/\//.test(url)) throw new Error('JUDGE0_URL must be an HTTP(S) URL');
+const origins=(process.env.ALLOWED_ORIGINS || 'http://localhost:5173,http://127.0.0.1:5173').split(',').map(s=>s.trim());
+const hops=Number(process.env.TRUST_PROXY_HOPS || 0);
+if(!Number.isInteger(hops) || hops<0 || hops>5) throw new Error('Invalid TRUST_PROXY_HOPS');
+const port=Number(process.env.PORT || 8787);
+createApp({url,token:process.env.JUDGE0_AUTH_TOKEN,languageIds},origins,undefined,hops).listen(port,()=>console.log(`Runner proxy listening on port ${port}; judge ${url?'configured':'not configured'}.`));
